@@ -1,7 +1,19 @@
-<button mat-button [matMenuTriggerFor]="menu">Menu</button>
-<mat-menu #menu="matMenu">
-  <button mat-menu-item>Home</button>
-  <button mat-menu-item>About Me</button>
-  <button mat-menu-item>Resume</button>
-  <button mat-menu-item>Contactnf</button>
-</mat-menu>
+
+<div fxLayout="column" fxLayoutAlign="space-around stretch" >
+    <button mat-button>
+        <mat-icon>home</mat-icon>
+        Home
+    </button>
+    <button mat-button>
+        <mat-icon>perm_identity</mat-icon>
+        About me
+    </button>
+    <button mat-button>
+        <mat-icon>description</mat-icon>
+        Resume
+    </button>
+    <button mat-button>
+        <mat-icon>email</mat-icon>
+        Contact
+    </button>
+</div>
