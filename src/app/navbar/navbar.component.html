@@ -1,19 +1,25 @@
 
-<div fxLayout="column" fxLayoutAlign="space-around stretch" >
-    <button mat-raised-button color="primary">
-        <mat-icon tooltip="Home">home</mat-icon>   
+<div fxLayout="column" fxLayoutAlign="space-around stretch" class="navbar-container">
+    <button mat-icon-button
+            matTooltip="Home"
+            matTooltipPosition="right"
+            color="primary">
+        <mat-icon >home</mat-icon>
     </button>
 
-    <button mat-raised-button color="primary">
-        <mat-icon tooltip="About me">perm_identity</mat-icon>
+    <button mat-icon-button color="primary">
+        <mat-icon matTooltip="About me"
+                  matTooltipPosition="right">perm_identity</mat-icon>
     </button>
 
-    <button mat-raised-button color="primary">
-        <mat-icon tooltip="Resume">description</mat-icon>
+    <button mat-icon-button color="primary">
+        <mat-icon matTooltip="Resume"
+                  matTooltipPosition="right">description</mat-icon>
     </button>
 
-    <button mat-raised-button color="primary">
-        <mat-icon tooltip="Contact">email</mat-icon>
+    <button mat-icon-button color="primary">
+        <mat-icon matTooltip="Contact"
+                  matTooltipPosition="right">email</mat-icon>
     </button>
 </div>
 
