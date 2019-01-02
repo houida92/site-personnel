@@ -1,0 +1,49 @@
+.img-container {
+  height: 99vh;
+  background-image: linear-gradient(
+  to right bottom,
+  rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 102, 0.5)
+  ),
+  url("../../assets/img/person-laptop.jpg");
+  background-size: cover;
+  width: 100%;
+  background-position:top ;
+  position: relative;
+}
+
+.text-box{
+  text-align: center;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.heading-primary {
+  color: white;
+  text-transform: uppercase;
+}
+.heading-primary-main{
+  display: block;
+  font-size: 70px;
+  font-weight: 500;
+  letter-spacing:10px;
+}
+.heading-primary-sub{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  font-size: 40px;
+  font-weight: 200;
+  letter-spacing:5px;
+}
+.header-primary-icon {
+  font-size: 60px;
+  color: white;
+}
+.header-primary-icon:hover {
+  font-size: 60px;
+  color: #000033;
+}
+
+
