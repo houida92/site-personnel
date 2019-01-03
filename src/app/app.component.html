@@ -1,6 +1,7 @@
 <div fxLayout="row" fxFlexAlign="start center">
 <app-navbar (onComponentSelected)="getSelectedComponent($event)"></app-navbar>
-<app-home fxFlex="" *ngIf="selectedComponent === 'home'"></app-home>
+<app-home fxFlex="" *ngIf="selectedComponent === 'home'"
+          (onComponentSelected)="getSelectedComponent($event)"></app-home>
   <app-aboutme *ngIf="selectedComponent === 'about'"> </app-aboutme>
 </div>
 <!--<router-outlet></router-outlet>-->

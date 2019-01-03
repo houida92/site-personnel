@@ -1,7 +1,8 @@
 
 $color-grey-dark:#333333;
 .bio-box  {
-  margin: 200px 0 0 150px;
+  margin: 100px 0 0 150px;
+  position: relative;
 }
 
 .bio-box--sub {
@@ -17,7 +18,7 @@ $color-grey-dark:#333333;
   text-align: center;
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .profile-img--container {
@@ -26,17 +27,32 @@ $color-grey-dark:#333333;
 
 .profile-img {
   position:absolute;
-  top:50%;
+  top:40%;
   left:30%;
   height: 200px;
 }
 
 $color-icon-hover:#000033;
-.header-primary-icon {
+.bio-box__header-primary-icon {
   font-size: 60px;
   color: black;
 }
-.header-primary-icon:hover {
+.bio-box__header-primary-icon:hover {
   font-size: 60px;
   color:$color-icon-hover;
+}
+.technologies-box {
+  padding:5% 20% 0% 20%;
+  width: 95vw;
+}
+.technologies-box__tech{
+  padding-top: 20%;
+  margin-bottom: 20%;
+  font-size: 40px;
+  color: $color-grey-dark;
+}
+
+.plus-icon__container {
+  padding-left: 50%;
+  padding-top: 20px;
 }

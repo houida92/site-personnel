@@ -1,8 +1,11 @@
-<div fxLayout="row" fxFlexAlign="space-around center" fxLayoutGap="30px">
-<div class="bio-box" fxFlex="40">
-  <p class="bio-box--main">
-    Full-Stack Web Developer
-  </p>
+<div fxLayout="row"
+     fxFlexAlign="space-around center"
+     fxLayoutGap="30px"
+     *ngIf="isBioDisplayed">
+  <div class="bio-box" fxFlex="40" fxLayout="column" fxFlexAlign="space-around center">
+    <p class="bio-box--main">
+      Full-Stack Web Developer
+    </p>
     <p class="bio-box--sub">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Nunc vel massa tincidunt, elementum tortor ut, sollicitudin ipsum.
@@ -12,13 +15,38 @@
       sed nibh vel ullamcorper. Vestibulum vestibulum congue ex non interdum.
       Suspendisse pretium turpis ac tincidunt luctus.
     </p>
-  <p class="bio-box--main">
-    <mat-icon class="header-primary-icon"> add_circle </mat-icon>
-  </p>
-
-
-</div>
+  </div>
   <div class="profile-img--container" fxFlex="50">
-    <img src="../../assets/img/profile-picture.png" class="profile-img" >
+    <img src="../../assets/img/profile-picture.png" class="profile-img">
   </div>
 </div>
+<div  *ngIf="isBioDisplayed" class="plus-icon__container" >
+  <button mat-icon-button="" (click)="displayBio()">
+    <mat-icon class="bio-box__header-primary-icon"> add_circle</mat-icon>
+  </button>
+</div>
+
+<div
+     [@openClose]="!isBioDisplayed ? 'open' : 'closed'"
+     fxLayout="column"
+     fxFlexAlign="space-around center"
+     class="technologies-box" >
+  <p *ngIf="!isBioDisplayed " class="bio-box--main">Mastered Technologies </p>
+  <div fxLayout="row wrap"
+       fxFlexAlign="space-around center"
+       fxLayoutGap="30px"
+       *ngIf="!isBioDisplayed">
+    <p fxFlex="" class="technologies-box__tech"> Angular </p>
+    <p fxFlex="" class="technologies-box__tech">+</p>
+    <p fxFlex="" class="technologies-box__tech">JavaEE</p>
+    <p fxFlex="" class="technologies-box__tech">+</p>
+    <p fxFlex="" class="technologies-box__tech">Symfony </p>
+  </div>
+  <div *ngIf="!isBioDisplayed" class="plus-icon__container">
+    <button mat-icon-button="" (click)="displayBio()">
+      <mat-icon class="bio-box__header-primary-icon"> clear </mat-icon>
+    </button>
+  </div>
+</div>
+
+
