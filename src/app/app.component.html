@@ -2,5 +2,7 @@
 <app-navbar (onComponentSelected)="getSelectedComponent($event)"></app-navbar>
 <app-home fxFlex="" *ngIf="selectedComponent === 'home'"></app-home>
   <app-aboutme *ngIf="selectedComponent === 'about'"> </app-aboutme>
+  <app-resume *ngIf="selectedComponent === 'resume'"></app-resume>
+  <app-contact *ngIf="selectedComponent === 'contact'"></app-contact>
 </div>
 <!--<router-outlet></router-outlet>-->

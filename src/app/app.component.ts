@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-export type ComponentName = "about" | "home" | "resume";
+export type ComponentName = "about" | "home" | "resume" | "contact";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
