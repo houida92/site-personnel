@@ -3,11 +3,14 @@
     <button mat-icon-button
             matTooltip="Home"
             matTooltipPosition="right"
+            (click)="selectComponent('home')"
             color="primary">
         <mat-icon >home</mat-icon>
     </button>
 
-    <button mat-icon-button color="primary">
+    <button mat-icon-button
+            color="primary"
+            (click)="selectComponent('about')">
         <mat-icon matTooltip="About me"
                   matTooltipPosition="right">perm_identity</mat-icon>
     </button>
