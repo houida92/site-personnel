@@ -1,11 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
-//html, body { height: 100%; }
-//body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { height: 100%; }
+body { margin: 0; font-family: Lato, "Helvetica Neue", sans-serif; }
 @import '~@angular/material/theming';
 
-$custom-typography: mat-typography-config($font-family: '"Lato", sans-serif;');
-@include mat-core($custom-typography);
+//$custom-typography: mat-typography-config($font-family: '"Lato", sans-serif;');
+//$custom-typography
+@include mat-core();
 
 
 $my-theme-primary: mat-palette($mat-indigo);

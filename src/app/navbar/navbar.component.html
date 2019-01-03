@@ -15,12 +15,16 @@
                   matTooltipPosition="right">perm_identity</mat-icon>
     </button>
 
-    <button mat-icon-button color="primary">
+    <button mat-icon-button color="primary"
+    (click)="selectComponent('resume')"
+    >
         <mat-icon matTooltip="Resume"
                   matTooltipPosition="right">description</mat-icon>
+                  
     </button>
 
-    <button mat-icon-button color="primary">
+    <button mat-icon-button color="primary"
+    (click)="selectComponent('contact')">
         <mat-icon matTooltip="Contact"
                   matTooltipPosition="right">email</mat-icon>
     </button>

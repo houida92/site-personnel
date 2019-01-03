@@ -12,13 +12,17 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatCardModule, MatTooltip, MatTooltipModule} from '@angular/material';
 import { AboutmeComponent } from './aboutme/aboutme.component';
+import { ResumeComponent } from './resume/resume.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    ResumeComponent,
+    ContactComponent
   ],
   imports: [
     FlexLayoutModule,
