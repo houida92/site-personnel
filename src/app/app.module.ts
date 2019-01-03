@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import {MatTooltip, MatTooltipModule} from '@angular/material';
+import {MatCardModule, MatTooltip, MatTooltipModule} from '@angular/material';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 
 @NgModule({
@@ -28,7 +28,8 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

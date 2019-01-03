@@ -1,3 +1,5 @@
+$color-icon-hover:#000033;
+
 .img-container {
   height: 100vh;
   background-image: linear-gradient(
@@ -43,7 +45,7 @@
 }
 .header-primary-icon:hover {
   font-size: 60px;
-  color: #000033;
+  color:$color-icon-hover;
 }
 
 
