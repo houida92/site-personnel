@@ -17,6 +17,10 @@ import {MatCardModule, MatTooltip, MatTooltipModule} from '@angular/material';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
+
 
 @NgModule({
   declarations: [
@@ -28,6 +32,7 @@ import { ContactComponent } from './contact/contact.component';
     ContactComponent
   ],
   imports: [
+    MatToolbarModule,
     ReactiveFormsModule,
     MatInputModule,
     FlexLayoutModule,
@@ -40,7 +45,8 @@ import { ContactComponent } from './contact/contact.component';
     MatTooltipModule,
     MatCardModule,
     FormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
