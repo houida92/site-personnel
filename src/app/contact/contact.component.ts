@@ -15,6 +15,9 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+  name: string;
+  mail: string;
+  messages: string;
 
   emailFormControl = new FormControl('', [
     Validators.required,
@@ -28,6 +31,9 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
  
-  
+  processForm() {
+    const allInfo = `My name is ${this.name}. My email is ${this.mail}. My message is ${this.messages}`;
+    alert(allInfo); 
+  }
 
 }
