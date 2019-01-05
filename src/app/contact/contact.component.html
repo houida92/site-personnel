@@ -1,3 +1,68 @@
-<p>
-  contact works!
-</p>
+
+
+
+<form class="example-form">
+  <div class="contact">
+    <h2>Contact Me</h2>
+  </div>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Your Name" value="Hédi">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Email" [formControl]="emailFormControl"
+               [errorStateMatcher]="matcher">
+        <mat-hint>Errors appear instantly!</mat-hint>
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+    <input matInput #message maxlength="256" placeholder="Message">
+    <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
+    <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+    </mat-form-field>
+<div class="example-button-row">
+  <button mat-raised-button 
+   matTooltip="Send Your Message">Send</button>
+</div>
+</form>
+
+<!--FOOTER / Contact informations-->
+
+<footer id="contact">
+  <div class="container">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="row text-center social">
+      <h4>CONTACT</h4>
+      <div class="list-unstyled list-inline" fxLayout="row wrap"
+      fxFlexAlign="space-around center"
+      fxLayoutGap="30px">
+        
+          <a href="mailTo:hedi.kortas@esprit.tn" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
+        
+        
+          <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a>
+        
+        
+          <a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+        
+        
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
+        
+        
+          <a href="https://github.com/" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+        
+        
+          <a href="https://codepen.io/" target="_blank"><i class="fa fa-codepen fa-2x"></i></a>
+        
+        
+          <a href="https://www.freecodecamp.com/" target="_blank"><i class="fa fa-fire fa-2x"></i></a>
+        
+      </div> 
+    </div>
+  </div>
+</footer>
