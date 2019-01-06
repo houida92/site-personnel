@@ -13,10 +13,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import {MatCardModule, MatTooltip, MatTooltipModule} from '@angular/material';
+import {MatCardModule, MatStepperModule, MatTooltip, MatTooltipModule} from '@angular/material';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
+import {AmChartsModule} from '@amcharts/amcharts3-angular';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,8 @@ import { ContactComponent } from './contact/contact.component';
     MatMenuModule,
     MatButtonModule,
     BrowserModule,
+    AmChartsModule,
+    MatStepperModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,

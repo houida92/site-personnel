@@ -1,0 +1,51 @@
+.skills {
+  width: 90vw;
+  height: 90vh;
+}
+.skills__charts {
+  height: 50vh;
+  width: 40vw;
+  margin:8% auto;
+}
+.skills__timeline {
+  padding: 20% auto;
+  margin: 8% auto;
+  min-width: 100px;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 45px;
+  margin-top:  50px;
+}
+
+/*to ovveride the default stepper icons*/
+::ng-deep mat-step-header .mat-step-label {
+  overflow: visible !important;
+}
+
+::ng-deep mat-step-header .mat-step-icon-not-touched span,
+::ng-deep mat-step-header .mat-step-icon span,
+::ng-deep mat-step-header .mat-step-icon-not-touched .mat-icon,
+::ng-deep mat-step-header .mat-step-icon .mat-icon {
+  display: none !important;
+}
+
+::ng-deep mat-step-header:nth-of-type(1) .mat-step-icon-not-touched:after,
+::ng-deep mat-step-header:nth-of-type(1) .mat-step-icon:after {
+  content: '' !important;
+}
+
+.active-step-1 mat-step-header:nth-of-type(1) .mat-step-icon-not-touched::after,
+.active-step-1 mat-step-header:nth-of-type(1) .mat-step-icon::after {
+  content: 'add_circle' !important; /* name of the material icon */
+  font-family: 'Material Icons' !important;
+  font-feature-settings: 'liga'  !important;
+}
+::ng-deep .mat-step-icon ::ng-deep.mat-icon,
+.mat-step-icon-not-touched .mat-icon {
+  font-size: 80px !important;
+  height: 80px !important;
+  width: 80px !important;
+}
