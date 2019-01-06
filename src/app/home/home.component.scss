@@ -15,15 +15,14 @@ $color-icon-hover:#000033;
 }
 
 .text-box{
-  text-align: center;
   position: absolute;
   top:50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-30%, -50%);
+  width: 70vw;
 }
 .heading-primary {
   color: white;
-  text-transform: uppercase;
 }
 .heading-primary-main{
   display: block;
@@ -49,3 +48,7 @@ $color-icon-hover:#000033;
 }
 
 
+.header-primary-icon--container{
+  text-align: center;
+  transform: translate(-23%, 0%);
+}
