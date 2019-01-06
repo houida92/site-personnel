@@ -24,4 +24,6 @@ $my-theme: mat-light-theme($my-theme-primary, $my-theme-accent, $my-theme-warn);
   padding: 0;
   box-sizing: border-box;
 }
-
+ html {
+   font-size: 10px;
+ }

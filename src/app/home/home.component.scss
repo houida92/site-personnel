@@ -1,7 +1,7 @@
 $color-icon-hover:#000033;
 
 .img-container {
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(
   to right bottom,
   rgba(0, 0, 0, 0.9),
@@ -11,7 +11,6 @@ $color-icon-hover:#000033;
   background-size: cover;
   width: 100%;
   background-position:top ;
-  position: relative;
 }
 
 .text-box{
@@ -26,24 +25,24 @@ $color-icon-hover:#000033;
 }
 .heading-primary-main{
   display: block;
-  font-size: 70px;
+  font-size: 7rem;
   font-weight: 500;
-  letter-spacing:10px;
+  letter-spacing:1rem;
 }
 .heading-primary-sub{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: block;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 200;
-  letter-spacing:5px;
+  letter-spacing:0.5rem;
 }
 .header-primary-icon {
-  font-size: 60px;
+  font-size: 6rem;
   color: white;
 }
 .header-primary-icon:hover {
-  font-size: 60px;
+  font-size: 6rem;
   color:$color-icon-hover;
 }
 

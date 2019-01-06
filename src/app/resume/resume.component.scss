@@ -1,6 +1,9 @@
 .skills {
   width: 90vw;
   height: 90vh;
+ p {
+   font-size: 1.5rem;
+ }
 }
 .skills__charts {
   height: 50vh;
@@ -10,14 +13,14 @@
 .skills__timeline {
   padding: 20% auto;
   margin: 8% auto;
-  min-width: 100px;
+  min-width: 10rem;
 }
 
 h1 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 45px;
-  margin-top:  50px;
+  font-size: 4.5rem;
+  margin-top:  5rem;
 }
 
 /*to ovveride the default stepper icons*/
@@ -52,14 +55,14 @@ h1 {
 
 .icon-bt{
   display: block;
-     margin: 8px auto;
-    height: 85px;
-    width: 85px;
+     margin: .8rem auto;
+    height: 8.5rem;
+    width: 8.5rem;
 }
 .icon-download{
-    font-size: 70px;
-    height: 70px;
-    margin-top: 25px;
-    margin-right: 45px;
+    font-size: 7rem;
+    height: 7rem;
+    margin-top: 2.5rem;
+    margin-right: 4.5rem;
 
 }

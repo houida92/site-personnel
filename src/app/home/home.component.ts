@@ -15,4 +15,5 @@ export class HomeComponent implements OnInit {
   selectComponent(component: ComponentName) {
     this.onComponentSelected.emit(component);
   }
+
 }

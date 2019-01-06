@@ -17,7 +17,6 @@ import {MatCardModule, MatStepperModule, MatTooltip, MatTooltipModule} from '@an
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
-import {AmChartsModule} from '@amcharts/amcharts3-angular';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 
@@ -40,7 +39,6 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatMenuModule,
     MatButtonModule,
     BrowserModule,
-    AmChartsModule,
     MatStepperModule,
     AppRoutingModule,
     BrowserAnimationsModule,
