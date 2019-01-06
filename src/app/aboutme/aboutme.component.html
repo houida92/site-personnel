@@ -2,6 +2,7 @@
 <div fxLayout="row"
      fxFlexAlign="space-around center"
      fxLayoutGap="30px"
+     @translate1
      *ngIf="isBioDisplayed">
   <div class="bio-box" fxFlex="40" fxLayout="column" fxFlexAlign="space-around center">
     <p class="bio-box--main">
@@ -17,8 +18,9 @@
       Suspendisse pretium turpis ac tincidunt luctus.
     </p>
   </div>
-  <div class="profile-img--container" fxFlex="50">
-    <img src="../../assets/img/profile-picture.png" class="profile-img">
+  <div @translate1
+    class="profile-img--container" fxFlex="50">
+    <img  src="../../assets/img/profile-picture.png" class="profile-img">
   </div>
 </div>
 <div  *ngIf="isBioDisplayed" class="plus-icon__container" >
@@ -29,23 +31,22 @@
 
 
 <div
-     [@openClose]="!isBioDisplayed ? 'open' : 'closed'"
      fxLayout="column"
      fxFlexAlign="space-around center"
-     class="technologies-box" >
-  <p *ngIf="!isBioDisplayed " class="bio-box--main">Mastered Technologies </p>
+     class="technologies-box"  *ngIf="!isBioDisplayed" @translate1>
+  <p  class="bio-box--main">Mastered Technologies </p>
   <div fxLayout="row wrap"
        fxFlexAlign="space-around center"
        fxLayoutGap="30px"
-       *ngIf="!isBioDisplayed">
+      >
     <p fxFlex="" class="technologies-box__tech"> Angular </p>
     <p fxFlex="" class="technologies-box__tech">+</p>
     <p fxFlex="" class="technologies-box__tech">JavaEE</p>
     <p fxFlex="" class="technologies-box__tech">+</p>
     <p fxFlex="" class="technologies-box__tech">Symfony </p>
   </div>
-  <div *ngIf="!isBioDisplayed" class="plus-icon__container">
-    <button mat-icon-button="" (click)="displayBio()">
+  <div class="plus-icon__container">
+    <button mat-icon-button="" (click)="displayBio()" >
       <mat-icon class="bio-box__header-primary-icon"> clear </mat-icon>
     </button>
   </div>

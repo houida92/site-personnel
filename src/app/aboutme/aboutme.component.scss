@@ -1,22 +1,22 @@
 
 $color-grey-dark:#333333;
 .bio-box  {
-  margin: 100px 0 0 150px;
+  margin: 10rem 0 0 15rem;
   position: relative;
 }
 
 .bio-box--sub {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   text-align: justify;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: lighter;
   color:$color-grey-dark ;
 }
 
 .bio-box--main {
   text-align: center;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -29,16 +29,16 @@ $color-grey-dark:#333333;
   position:absolute;
   top:40%;
   left:30%;
-  height: 200px;
+  height: 20rem;
 }
 
 $color-icon-hover:#000033;
 .bio-box__header-primary-icon {
-  font-size: 60px;
+  font-size: 6rem;
   color: black;
 }
 .bio-box__header-primary-icon:hover {
-  font-size: 60px;
+  font-size: 6rem;
   color:$color-icon-hover;
 }
 .technologies-box {
@@ -48,7 +48,7 @@ $color-icon-hover:#000033;
 .technologies-box__tech{
   padding-top: 20%;
   margin-bottom: 15%;
-  font-size: 40px;
+  font-size: 4rem;
   color: $color-grey-dark;
 }
 
