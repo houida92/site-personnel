@@ -18,6 +18,10 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import {AmChartsModule} from '@amcharts/amcharts3-angular';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
+
 
 @NgModule({
   declarations: [
@@ -29,6 +33,7 @@ import {AmChartsModule} from '@amcharts/amcharts3-angular';
     ContactComponent
   ],
   imports: [
+    MatToolbarModule,
     ReactiveFormsModule,
     MatInputModule,
     FlexLayoutModule,
@@ -43,7 +48,8 @@ import {AmChartsModule} from '@amcharts/amcharts3-angular';
     MatTooltipModule,
     MatCardModule,
     FormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
