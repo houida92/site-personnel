@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "hedi-siteperso",
+    "staging": "hedi-siteperso"
+  }
+}
