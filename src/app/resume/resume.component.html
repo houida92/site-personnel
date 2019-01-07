@@ -4,10 +4,14 @@
      class="skills" >
   <div fxFlex="">
     <h1> Skills </h1>
-    <div id="chartdiv" class="skills__charts" ></div>
+    <mat-card class="skill__charts--container">
+      <div id="chartdiv" class="skills__charts" ></div>
+    </mat-card>
+
   </div>
   <div fxFlex="30">
     <h1> Education & Experience </h1>
+    <mat-card class="skill__timeline--container">
       <mat-vertical-stepper class="skills__timeline">
         <mat-step >
           <ng-template matStepLabel>2011 </ng-template>
@@ -15,7 +19,7 @@
         </mat-step>
         <mat-step>
           <ng-template matStepLabel>2014</ng-template>
-            <p> mster dra chnya </p>
+          <p> mster dra chnya </p>
         </mat-step>
         <mat-step  matStepperIcon="done">
           <ng-template matStepLabel> 2018 </ng-template>
@@ -29,13 +33,14 @@
           Consultant chez PEAKS
         </mat-step>
       </mat-vertical-stepper>
+    </mat-card>
   </div>
 
 </div>
 
 
-<button mat-icon-button class="icon-bt" >
+<!--<button mat-icon-button class="icon-bt" >
         <mat-icon class="icon-download" matTooltip="Download CV"
                   matTooltipPosition="below">cloud_download</mat-icon>
 
-</button>
+</button>-->

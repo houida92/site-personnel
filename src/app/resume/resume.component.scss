@@ -5,7 +5,21 @@
    font-size: 1.5rem;
  }
 }
+
+.skill__charts--container {
+  min-height: 60vh;
+  width: 40vw;
+  margin:8% auto;
+  padding: 2rem auto;
+}
+.skill__timeline--container {
+  min-height: 60vh;
+  width: 20vw;
+  margin:8% auto;
+  padding: 2rem auto;
+}
 .skills__charts {
+  font-size: 1.5rem;
   height: 50vh;
   width: 40vw;
   margin:8% auto;
@@ -19,7 +33,7 @@
 h1 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 4.5rem;
+  font-size: 4rem;
   margin-top:  5rem;
 }
 
